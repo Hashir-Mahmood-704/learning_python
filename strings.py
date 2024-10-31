@@ -1,15 +1,29 @@
-myString = "my name is python"
+myString = "My name is Python"
+# string methods
 
-# """ """, 3 quotes me string hm tb likhtay hein jb hmari string lmbi ho or multiple lines me aati ho
-myLongString = """I am coding in python, right now.
-This is a new line.
-I use vscode for coding."""
-
-# string indexing
-print(myString[0])
-print(myString[2])
-print(myString[-1])
-# : colon syntax hm tb use krtay jb hmay index base pr multiple charaters chahye hotay, e.g printing characters from index 1 till index 8 (last index include nhi hota)
-print(myString[1: 9])
-# index 0 say 14 tk characters print ho rhay lekin 1 element k skip k sath
-print(myString[0: 15: 2])
+# len function is used to get length of string
+print(len(myString))
+# upper, it converts string to uppercase
+print(myString.upper())
+# lower, it converts string to lowercase
+print(myString.lower())
+# rstring, it removes the trailing characters
+print("python!!!!".rstrip("!"))
+# replace, it replaces target string with given string
+print("My name is Python".replace("Python", "Hashir"))
+# split, it splits string based upon given string and returns an array
+print(myString.split(" "))
+# capitalize, it capitalizes the first letter of string
+print("hello".capitalize())
+# count, it counts the instances of target string
+print("color is green and color is blue".count("color"))
+# endswith, it tells if string ends with specific substring
+print(myString.endswith("hon"))
+# find, it finds and tells the index of given string
+print(myString.find("name"))
+# isalnum, it tells if string consists of A-Z, a-z and 0-9 only
+print("Az01U?".isalnum())
+# islower, it tells if string consists of all lower case characters
+print(myString.islower())
+# swapcase, it converts lowercase characters to uppercase and uppercase characters to lowercase
+print("Pink RiBbOn".swapcase())
